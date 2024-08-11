@@ -1,0 +1,161 @@
+@import "../../assets/style/base.scss";
+  
+  .slideshow {
+    position: relative;
+    margin: 50px 0px 30px 0px;
+    height: 255px;
+    width: 100%;
+
+    @include desktop {
+      height : 415px;
+      max-width: 1440px;
+    }
+
+    @include largeDesktop {
+      height : 415px;
+    }
+    
+  }
+
+    .slideshow::before {
+      content: "";
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+
+    .slideshowPicture {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 20px;
+
+    @include desktop {
+      width: 100%;
+      height: 415px;
+    }
+
+    @include largeDesktop {
+      width: 100%;
+      height: 415px;
+    }
+  
+  }
+
+  .slideshow-picture-alone {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .slideshowArrow {
+    position: absolute;
+    bottom: 50%;
+    transform: translatey(50%);
+    z-index: 3;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+
+    @include tablet  {
+      width: 96px;
+      height: 96px;
+    }
+
+    @include desktop {
+      width: 96px;
+      height: 96px;
+    }
+
+    @include largeDesktop {
+      width: 96px;
+      height: 96px;
+    }
+  }
+  
+  .slideshowArrowRight {
+    right: 20px;
+  }
+  
+  .slideshowArrowLeft {
+    left: 20px;
+  }
+  
+  .slideshowCounter {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    color : white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -2px;
+  
+    @include phone {
+       display: none;
+    }
+  }
+ 
+ 
+
+
+ /* 
+
+    .slideshow::before {
+      content: "";
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      position: absolute;
+      ;
+      border-radius: 20px;
+    }
+
+    .slideshowPicture {
+  
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 20px;
+    width: 100%;
+  
+  }
+
+  .slideshow-picture-alone {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .slideshowArrow {
+    position: absolute;
+    bottom: 50%;
+    transform: translatey(50%);
+    z-index: 3;
+    cursor: pointer;
+    width: 96px;
+    height: 119px;
+
+  }
+  
+  .slideshowArrowRight {
+    right: 20px;
+  }
+  
+  .slideshowArrowLeft {
+    left: 20px;
+  }
+  
+  .slideshowCounter {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    //color : $third-color;
+    font-size: 18px;
+    //font-weight: $Font-W500;
+    letter-spacing: -2px;
+  
+   
+  }*/

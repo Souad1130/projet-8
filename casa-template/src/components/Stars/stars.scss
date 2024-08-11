@@ -1,0 +1,24 @@
+.star {
+    display: Flex;
+    flex-direction: Row;
+    flex-wrap: Wrap;
+    width: 98px;
+    height: 18px;
+    color: #FF6060;
+    @include tablet {
+        width: 196px;
+        height: 36px;
+    }
+
+    @include desktop {
+        width: 196px;
+        height: 36px;
+    }
+
+    @include largeDesktop {
+        width: 196px;
+        height: 36px;
+    }
+
+
+}

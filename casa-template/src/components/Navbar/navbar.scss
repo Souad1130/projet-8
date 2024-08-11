@@ -1,0 +1,82 @@
+@import '../../assets/style/media-queries.scss';
+.nav-list {
+    display: Flex;
+    flex-direction: Row;
+    gap: 8px;
+
+    @include tablet {
+        gap: 26px;
+    }
+
+    @include desktop {
+        gap: 26px;
+    }
+
+    @include largeDesktop {
+        gap: 26px;
+    }
+
+        a {
+            text-align: right;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34px;
+           // position: relative;
+            text-transform: uppercase;
+            color: #000;
+            border-bottom: 1px solid transparent;
+
+            @include tablet {
+                font-size: 24px;
+                text-transform: none;
+            }
+
+            @include desktop {
+                font-size: 24px;
+                text-transform: none;
+            }
+
+            @include largeDesktop {
+                font-size: 24px;
+                text-transform: none;
+            }
+        }
+        .active {
+            border-color: #000;
+        }
+        .inactive {
+            border-color: transparent;
+    
+        }
+}
+
+
+
+
+
+
+
+/* .nav-list {
+    display: flex; 
+    align-items: end; 
+    gap: 57px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-align: right;
+    a {
+        color: #000;
+        border-bottom: 1px solid transparent;
+       
+    }
+    .active {
+        border-color: #000;
+    }
+    .inactive {
+        border-color: transparent;
+
+    }
+
+} */

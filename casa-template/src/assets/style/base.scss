@@ -1,0 +1,74 @@
+//-----------------------------
+// CSS code for website base  /
+//-----------------------------
+
+@import "layout.scss";
+@import "vendor.scss";
+@import "animations.scss";
+@import "./media-queries.scss";
+
+//-----------------------------
+// Color                      /
+//-----------------------------
+$primary-color : #FF6060;
+$secondary-color : #000;
+$third-color : #FFFFFF;
+$bkg-color : #F6F6F6;
+
+//-----------------------------
+// Root & Body CSS            /
+//-----------------------------
+
+
+body {
+    font-family: $font-family;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+//-----------------------------
+// Heading H1 to H6           /
+//-----------------------------
+    h1 {
+      z-index: 1;
+      color: $third-color;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: $Font-W500;
+      line-height: 68px;
+      margin: $margin0;
+      padding: $padding0;
+      ;
+  
+      @include phone {
+          font-size : 24px;
+          padding: $padding0;
+      }
+      
+  }
+//-----------------------------
+// List                       /
+//-----------------------------
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+  }
+
+  a {
+    font-weight: $Font-W500;
+    color: $primary-color;
+    text-decoration: inherit;
+  }
+
+
+}
+
+#root {
+  display: Flex;
+  flex-direction: Column;
+  align-items: Center;
+  width: $W-100;
+  max-width: $max-W1900 ;
+}

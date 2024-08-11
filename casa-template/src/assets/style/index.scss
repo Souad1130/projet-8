@@ -1,0 +1,46 @@
+// This is a fully homemade CSS 
+// Each HTML or JSX part has his prop CSS code
+
+/* Reset CSS */
+//@import 'reset'; // Use a reinitialisation file is needed
+
+/* Mixins */
+//@import 'mixins'; // Define your mixins here (pour la réutilisation de styles)
+
+/* Base Styles */
+@import 'base'; // Define here HTML elements (body, a, p, etc.) & colors
+
+/* Layout */
+@import 'layout'; // Define here all the display (grid, flexbox, etc.)
+
+/* Components */ // Define here components style (button, form, etc.)
+//@import "../../components/Banner/banner.scss";
+//@import "../../components/slideshow/slideshow.scss";
+//@import "../../components/Discoverer/discoverer.scss";
+//@import "../../components/Error404/error404.scss";
+@import "../../components/Footer/footer.scss";
+@import "../../components/Header/header.scss";
+//@import "../../components/PropertyCard/propertycard.scss";
+//@import "../../components/Stars/stars.scss";
+@import "../../components/Navbar/navbar.scss";
+//@import "../../components/LoaderComponents/loaderComponents.scss";
+
+/* Pages */
+@import 'Home'; // Define specifical styles fort website pages
+@import 'about';
+//@import 'propertyDetails';
+
+/* Media Queries */
+@import 'media-queries'; // Manage responsives styles using Media Queries
+
+/* Animations */
+@import 'animations'; // Define CSS animations if needed
+
+/* Custom Styles */
+//@import 'custom'; // Add your personnal custom here
+
+/* Print Styles */
+//@import 'print'; // Styles if you need to print
+
+/* Vendor Styles */
+@import 'vendor'; // Integetate here styles for frameworks (Bootstrap, Font Awesome, etc.)

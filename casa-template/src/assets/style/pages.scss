@@ -1,0 +1,146 @@
+@import "../../assets/style/layout.scss";
+
+
+.root {
+
+    @include tablet {
+        max-width: $max-W1440;
+    }
+
+    @include desktop {
+    max-width : $max-W1440;
+    margin: auto; 
+    }
+
+    @include largeDesktop {
+        max-width : $max-W1900;
+        margin: auto;
+    }
+}
+.container-site {
+    display: Flex;
+    flex-direction: Column;
+    align-items: Center;
+    justify-content: Center;
+    max-width: $max-W1240;
+    width: $W-85 ;
+    margin: auto;
+    margin-bottom: 27px;
+
+    @include tablet {
+        margin-bottom: 37px;
+    }
+
+    @include desktop {
+        margin-bottom: 50px;
+        width: $W-100;
+    }
+
+    @include largeDesktop {
+        margin-bottom: 50px;
+        width: $W-100;
+    }
+}
+
+//-----------------------------
+// Homepage
+//-----------------------------
+main {
+    display: Flex;
+    flex-direction: Column;
+    justify-content: Center;
+    align-items: Center;
+    max-width: $max-W1440;
+    width: $W-89;
+    margin: auto;
+
+    @include tablet {
+        width: $W-89 ;
+    }
+
+    @include desktop {
+        width: $W-100;
+    }
+
+    @include largeDesktop {
+        width: $W-100;
+    }
+}
+
+
+
+
+//-----------------------------
+// Cards Gallery on Homepage
+//-----------------------------
+.properties-section {
+    display:Flex;
+    justify-content: Center;
+    width: $W-100;
+    max-width: $max-W1240;
+    margin: auto;
+}
+
+
+.property-section {
+    display: Flex;
+    justify-content: Center;
+    align-items: Center;
+    flex-wrap: wrap;
+    width: $W-100;
+    border-radius: 25px;
+    
+
+    @include tablet {
+        background-color: $bkg-color;
+        padding : 56px 50px 43px 50px;
+        margin-bottom: 50px;
+    }
+
+    @include desktop {
+        background-color: $bkg-color;
+        padding : 56px 50px 43px 50px;
+        margin-bottom: 50px;
+    }
+
+    @include largeDesktop {
+        background-color: $bkg-color;
+        padding : 56px 50px 43px 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.property-listing {
+    display: Grid;
+    align-items: Center;
+    justify-content: Center;
+    gap: 40px;
+    width: $W-100;
+    grid-template-columns: repeat(1, auto);
+    grid-auto-rows: 255px;
+    
+
+    @include tablet {
+        grid-template-columns: repeat(2, auto);
+        grid-auto-rows: 280px;
+        
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: 340px;  
+        margin-top: 56px;
+    }
+
+     @include largeDesktop {
+         grid-template-columns: repeat(3, auto);
+         grid-auto-rows: 340px;
+     }
+}
+
+
+
+
+//-----------------------------
+// PropertyDetails
+//-----------------------------

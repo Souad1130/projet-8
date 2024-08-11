@@ -1,0 +1,199 @@
+@import '../../assets/style/media-queries.scss';
+
+.property-details {
+    width: 100%;
+
+    @include phone {
+        width: 85%;
+
+    }
+}
+
+.property-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    /* Adjust as needed */
+
+}
+
+.property-titleandlocation {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        display: flex;
+        color: #FF6060;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        font-family: Montserrat;
+        line-height: 51px;
+        text-align: left;
+        margin: 0;
+
+        /* Remove default margin */
+        @include phone {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .property-location {
+        display: flex;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        color: black;
+
+        @include phone {
+            font-size: 14px;
+        }
+    }
+}
+
+.property-ownerdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #FF6060;
+    width: 49%;
+
+    @include phone {
+
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        text-align: right;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        margin-right: 10px;
+        height: 52px;
+
+        @include phone {
+            width: 50%;
+            font-size: 12px;
+        }
+    }
+
+    &__profilpic {
+        display: flex;
+        border-radius: 50%;
+        object-fit: cover;
+        width: 68px;
+        height: 68px;
+        flex-shrink: 0;
+        transition: transform 0.3s;
+
+        @include phone {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &__profilpic:hover {
+        transform: scale(1.5);
+    }
+
+}
+
+
+
+#details-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+
+    @include phone {
+        flex-direction: column;
+        /* Align vertically for mobile */
+    }
+}
+
+.property-ownerdetailsandnotation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.property-tags {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    &--tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FF6060;
+        text-align: center;
+        border-radius: 10px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 5px 10px;
+        height: 25px;
+
+        @include phone {
+            font-size: 10px;
+        }
+
+        p {
+            margin: auto;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+    }
+}
+
+
+
+.discoverer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+
+    @include phone {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        gap: 5px;
+    }
+
+    .discoverer {
+        width: 50%;
+
+        @include phone {
+            width: 95%;
+            font-size: 13px;
+            padding: 5px;
+        }
+
+    }
+}

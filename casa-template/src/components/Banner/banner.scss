@@ -1,0 +1,115 @@
+
+@import '../../assets/style/layout.scss';
+@import '../../assets/style/media-queries.scss';
+@import '../../assets/style/animations.scss';
+
+.container-banner {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  height: 111px; 
+  border-radius: 10px;  
+  overflow: hidden;
+  @include desktop {
+    height: 223px;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  @include largeDesktop {
+    height: 223px;
+    width: 100%;
+    border-radius: 15px;
+  }
+ 
+  .banner--text {
+    position: absolute; 
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    top: 35%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    @include tablet {
+      flex-direction: Row;
+      justify-content: Center;
+      text-align: left;
+      font-size: 28px;
+      font-style: normal; 
+      line-height: 20px;
+    }
+
+    @include desktop {
+      flex-direction: Row;
+      justify-content: Center;
+      text-align: center;
+      font-size: 48px;
+      position: absolute; 
+      font-family: Montserrat, sans-serif;
+      color: #FFFFFF;
+      top: 50%;  
+      left: 50%;  
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    @include largeDesktop {
+      flex-direction: Row;
+      justify-content: Center;
+      text-align: center;
+      font-size: 48px;
+      position: absolute; 
+      font-family: Montserrat, sans-serif;
+      color: #FFFFFF;
+      top: 50%;  
+      left: 50%;  
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    @include phone {
+      line-height: 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    text-align:left;
+    color: #FFFFFF;
+    bottom: 50%;  
+    left: 35%;  
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+    }
+ 
+  }
+  .banner--image {
+    width: 100%;
+    height: 111px;  
+    object-fit: cover;  
+    filter: brightness(50%);  
+    border-radius: 10px;
+    @include desktop {
+      height: 223px;
+      width: 100%;
+      object-fit: cover;  
+      filter: brightness(50%);  
+      border-radius: 10px;
+    }
+
+    @include largeDesktop {
+      height: 223px;
+      width: 100%;
+      object-fit: cover;  
+      filter: brightness(50%);  
+      border-radius: 10px;
+    }
+    
+   
+  }
+  
+  
+
+
+}
+
+
