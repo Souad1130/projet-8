@@ -7,7 +7,7 @@
   z-index: 2;
   opacity: 1;
   @include phone {
-    margin: 0;
+    margin: 20px 20px 0 10px;
 }
   :hover {
     opacity: 0.9;
