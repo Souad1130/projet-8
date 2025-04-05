@@ -1,12 +1,17 @@
 @import '../../assets/style/media-queries.scss';
 .discoverer {
+
   margin: 20px;
   transition: 0.4s;
   position: relative;
   z-index: 2;
   opacity: 1;
+  @include phone {
+    margin: 0;
+}
   :hover {
     opacity: 0.9;
+    
   }
 
 
@@ -53,6 +58,8 @@
   }
 
   .discoverer-content {
+    display: flex;
+    flex-direction: column;
     background-color: #f6f6f6;
     border-radius: 0 0 10px 10px;  
     margin-top: 0;
